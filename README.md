@@ -1,7 +1,6 @@
 # Art Institute of Chicago — Collection Table
 
-A React/TypeScript/Vite app for the internship assignment.
-
+A React/TypeScript/Vite app 
 ## Setup
 
 ```bash

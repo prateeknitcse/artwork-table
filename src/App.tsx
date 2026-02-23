@@ -10,7 +10,7 @@ import './App.css';
 
 const ROWS_PER_PAGE = 12;
 
-export default function App() {
+export default function App(){
   const { artworks, totalRecords, loading, fetchPage } = useFetchArtworks();
   const [currentPage, setCurrentPage] = useState(1);
 
