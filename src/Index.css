@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --bg-primary: #0d0d0f;
+  --bg-secondary: #141418;
+  --bg-card: #1a1a20;
+  --accent: #c9a96e;
+  --accent-light: #e8c98a;
+  --text-primary: #f0ece4;
+  --text-muted: #8a8490;
+  --border: rgba(201, 169, 110, 0.15);
+  --border-strong: rgba(201, 169, 110, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+/* PrimeReact overrides */
+.p-datatable .p-datatable-thead > tr > th {
+  background: var(--bg-secondary) !important;
+  color: var(--accent) !important;
+  border-color: var(--border) !important;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  padding: 1rem 1.25rem !important;
+}
+
+.p-datatable .p-datatable-tbody > tr {
+  background: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border) !important;
+  transition: background 0.15s ease;
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background: rgba(201, 169, 110, 0.06) !important;
+}
+
+.p-datatable .p-datatable-tbody > tr.p-highlight {
+  background: rgba(201, 169, 110, 0.12) !important;
+  color: var(--text-primary) !important;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  border-color: var(--border) !important;
+  padding: 0.9rem 1.25rem !important;
+  font-size: 0.875rem;
+}
+
+.p-checkbox .p-checkbox-box {
+  border-color: var(--border-strong) !important;
+  background: transparent !important;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight .p-checkbox-icon {
+  color: var(--bg-primary) !important;
+}
+
+.p-paginator {
+  background: var(--bg-secondary) !important;
+  border-color: var(--border) !important;
+  color: var(--text-primary) !important;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+  color: var(--text-muted) !important;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: var(--accent) !important;
+  color: var(--bg-primary) !important;
+  border-color: var(--accent) !important;
+}
+
+.p-paginator button {
+  color: var(--text-muted) !important;
+}
+
+.p-paginator button:hover:not(:disabled) {
+  background: rgba(201, 169, 110, 0.1) !important;
+  color: var(--accent) !important;
+}
+
+.p-overlaypanel {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-strong) !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5) !important;
+  border-radius: 8px !important;
+}
+
+.p-overlaypanel::before,
+.p-overlaypanel::after {
+  border-bottom-color: var(--border-strong) !important;
+}
+
+.p-inputtext {
+  background: var(--bg-secondary) !important;
+  border-color: var(--border-strong) !important;
+  color: var(--text-primary) !important;
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+.p-inputtext:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 2px rgba(201, 169, 110, 0.2) !important;
+}
+
+.p-button {
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+.p-button.p-button-outlined {
+  border-color: var(--border-strong) !important;
+  color: var(--text-muted) !important;
+}
+
+.p-button.p-button-outlined:hover {
+  background: rgba(201, 169, 110, 0.1) !important;
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.p-datatable-loading-overlay {
+  background: rgba(13, 13, 15, 0.7) !important;
+}
