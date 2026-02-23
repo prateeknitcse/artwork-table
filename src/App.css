@@ -1,0 +1,29 @@
+.app-container {
+  padding: 2rem;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section h2 {
+  margin: 0;
+}
+
+.results-count {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.selected-count {
+  font-weight: 500;
+  color: #2563eb;
+}
